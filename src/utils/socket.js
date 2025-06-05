@@ -3,7 +3,7 @@ import { BASE_URL } from "./constants";
 
 export const createSocketConnection = () => {
   return io(BASE_URL, {
-    path: "/api/socket.io",
+     path: "/socket.io/",
     transports: ["websocket"], // helps with Render
     withCredentials: true,
   });
