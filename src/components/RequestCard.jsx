@@ -26,29 +26,27 @@ const RequestCard = ({ user }) => {
 
   }
 
-
-
   return (
-    <div className="bg-base-300 w-2/3 shadow-lg rounded-xl my-4 mx-auto">
-      <div className="flex p-4 gap-4 items-start justify-between">
-        <div className="flex gap-4 items-start w-full">
+    <div className="bg-base-300 sm:w-2/3 shadow-lg rounded-xl my-4 sm:mx-auto mx-6">
+      <div className="flex sm:flex-row flex-col p-4 gap-4 items-start justify-between">
+        <div className="flex gap-4 items-start  w-full">
           <img
             src={photoURL}
             alt="Profile"
-            className="rounded-lg w-22 h-22 object-cover"
+            className="rounded-lg sm:w-22 sm:h-22 w-9 h-9 object-cover"
           />
-          <div className="flex flex-col w-full max-w-4xl">
-            <h2 className="font-bold text-xl mb-2 text-white">
+          <div className="flex flex-col w-full sm:max-w-4xl">
+            <h2 className="sm:font-bold font-medium sm:text-xl text-xs sm:mb-2 text-white">
               {firstName + " " + lastName}
             </h2>
-            <p className="text-sm text-white break-words whitespace-pre-line">
+            <p className="text-sm text-white break-words whitespace-pre-line hidden sm:block">
               {About}
             </p>
           </div>
         </div>
-        <div className="flex flex-row gap-4 items-center ml-4 mt-5">
-          <button className="btn btn-primary"  onClick={() => handleRequest("accepted", user._id)}>Accept</button>
-          <button className="btn btn-error"  onClick={() => handleRequest("rejected", user._id)}>Reject</button>
+        <div className="flex flex-row sm:gap-4 gap-3 items-center sm:ml-4 ml-12 sm:mt-5 -mt-6 ">
+          <button className="btn btn-primary btn-xs sm:btn-md"  onClick={() => handleRequest("accepted", user._id)}>Accept</button>
+          <button className="btn btn-error sm:btn-md btn-xs"  onClick={() => handleRequest("rejected", user._id)}>Reject</button>
         </div>
       </div>
     </div>

@@ -181,10 +181,10 @@ const Chat = () => {
   return (
     <div className="flex flex-col w-full h-[99vh] bg-gray-900 border border-gray-700 rounded-xl overflow-hidden font-sans">
       {/* Chat Header */}
-      <div className="flex flex-row justify-between items-center w-full bg-gray-800 px-6 py-4 border-b border-gray-700">
-        <div className="flex items-center gap-4">
+      <div className="flex flex-row justify-between items-center w-full bg-gray-800 sm:px-6 sm:py-4 px-4 py-2 border-b border-gray-700">
+        <div className="flex items-center sm:gap-4 gap-2">
           <div className="avatar">
-            <div className="w-12 h-12 rounded-full border-2 border-primary">
+            <div className="sm:w-12 w-8 sm:h-12 h-8 rounded-full border-2 border-primary">
               <img
                 src={
                   targetUser?.photoURL ||
@@ -196,8 +196,8 @@ const Chat = () => {
             </div>
           </div>
           <div>
-            <div className="flex items-center gap-2">
-              <span className="text-xl font-bold text-white">
+            <div className="flex items-center gap-1 sm:gap-2">
+              <span className="sm:text-xl text-sm  font-bold text-white">
                 {targetUser
                   ? `${targetUser.firstName} ${targetUser.lastName}`
                   : messages.find((msg) => msg.senderId === targetId)
@@ -222,15 +222,15 @@ const Chat = () => {
             <span className="text-xs text-gray-400">{targetUser?.emailId}</span>
           </div>
         </div>
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-1 sm:gap-10 items-center mr-4 sm:mr-4">
           <button
-            className="btn btn-circle btn-ghost text-primary text-xl hover:bg-primary/10"
+            className="btn btn-circle btn-ghost text-primary sm:text-2xl text-lg hover:bg-primary/10"
             title="Call"
           >
             <FaPhoneAlt />
           </button>
           <button
-            className="btn btn-circle btn-ghost text-primary text-xl hover:bg-primary/10"
+            className="btn btn-circle btn-ghost text-primary sm:text-2xl text-lg hover:bg-primary/10"
             title="Video Call"
           >
             <FaVideo />
@@ -240,7 +240,7 @@ const Chat = () => {
 
       {/* Chat Body */}
       <div
-        className="flex-1 overflow-y-auto p-6 bg-gray-900 text-gray-200"
+        className="flex-1 overflow-y-auto sm:p-6 p-2 bg-gray-900 text-gray-200"
         ref={chatBodyRef}
       >
         {messages.length === 0 ? (
@@ -252,20 +252,20 @@ const Chat = () => {
               <div
                 key={index}
                 className={`flex mb-6 ${
-                  isSent ? "justify-end" : "justify-start"
+                  isSent ? "sm:justify-end justify-end-safe" : "justify-start"
                 }`}
               >
                 <div
-                  className={`max-w-xs md:max-w-md rounded-2xl px-5 py-3 shadow-lg relative
+                  className={`sm:max-w-xs w-[30vw] h-auto sm:w-auto sm:h-auto rounded-2xl sm:px-5 sm:py-3 px-2 py-2 shadow-lg relative
                   ${
                     isSent
                       ? "bg-gradient-to-br from-green-600 to-green-500 text-white rounded-tr-none"
                       : "bg-gradient-to-br from-blue-700 to-blue-500 text-white rounded-tl-none"
                   }`}
                 >
-                  <div className="text-sm">{msg.text}</div>
-                  <div className="flex items-center gap-2 mt-2 justify-end">
-                    <span className="text-xs opacity-70">
+                  <div className="sm:text-sm text-xs">{msg.text}</div>
+                  <div className="flex items-center sm:gap-2 gap-1.5 sm:mt-2 justify-end">
+                    <span className="text-xs sm:opacity-70 opacity-60">
                       {formatTime(msg.sentAt)}
                     </span>
                     {isSent && (
@@ -292,7 +292,7 @@ const Chat = () => {
       </div>
 
       {/* Chat Input */}
-      <div className="relative flex items-center p-4 bg-gray-800 border-t border-gray-700">
+      <div className="relative flex items-center sm:p-4 p-2 bg-gray-800 border-t border-gray-700 mb-4 sm:mb-2 w-auto sm:w-full">
         <input
           value={newMessage}
           onChange={(e) => setNewMessage(e.target.value)}
@@ -303,12 +303,12 @@ const Chat = () => {
             }
           }}
           type="text"
-          className="w-full bg-gray-700 text-white rounded-full py-3 pl-4 pr-16 outline-none focus:bg-gray-600 placeholder-gray-400"
+          className="sm:w-full w-full bg-gray-700 text-white rounded-full py-3 pl-4 pr-16 outline-none focus:bg-gray-600 placeholder-gray-400"
           placeholder="Type a message..."
         />
         <button
           onClick={sendMessage}
-          className="absolute right-6 bg-primary text-white rounded-full w-14 h-10 flex items-center justify-center hover:bg-primary/80 active:bg-primary/90 transition-colors font-bold text-lg"
+          className="absolute sm:right-6 right-4 bg-primary text-white rounded-full sm:w-14 sm:h-10  w-12 h-8 flex items-center justify-center hover:bg-primary/80 active:bg-primary/90 transition-colors sm:font-bold sm:text-lg font-medium text-sm"
         >
           Send
         </button>

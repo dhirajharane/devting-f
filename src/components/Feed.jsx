@@ -30,7 +30,7 @@ const Feed = () => {
       {feed && feed.length > 0 ? (
         <UserCard user={feed[0]} />
       ) : (
-        <p className="text-center font-bold text-2xl text-gray-400 mt-8">
+        <p className="text-center font-bold sm:text-2xl text-lg text-gray-400 sm:mt-8 -mt-84 mr-22 sm:mr-2">
           No feed data found.
         </p>
       )}

@@ -41,8 +41,8 @@ const Requests = () => {
 
   return (
     <div className="items-center flex flex-col">
-      <h1 className="text-3xl font-bold my-4 text-center">Requests</h1>
-      <div className="flex flex-row flex-wrap items-center px-7 py-8">
+      <h1 className="sm:text-3xl text-lg sm:font-bold font-semibold sm:my-4 text-center mt-18 sm:mt-2 -ml-24 sm:ml-0">Requests</h1>
+      <div className="flex flex-row flex-wrap items-center sm:px-7 sm:py-8 px-5 py-3">
         {requests.map((request) => (
           <RequestCard key={request._id} user={request} />
         ))}

@@ -57,7 +57,7 @@ const EditProfile = () => {
 
       <div className="card w-full max-w-md shadow-xl flex-shrink-0">
         <div className="card-body">
-          <h2 className="card-title text-2xl font-bold text-center mb-4">
+          <h2 className="card-title text-2xl font-bold text-center mb-4 mt-12 sm:mt-0">
             Edit Profile
           </h2>
           <div className="space-y-4">
