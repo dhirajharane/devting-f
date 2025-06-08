@@ -27,19 +27,19 @@ const RequestCard = ({ user }) => {
   }
 
   return (
-    <div className="bg-base-300 sm:w-2/3 shadow-lg rounded-xl my-4 sm:mx-auto mx-6">
+    <div className="bg-base-300 sm:w-2/3 w-[65vw] shadow-lg rounded-xl my-4 sm:mx-auto mx-auto">
       <div className="flex sm:flex-row flex-col p-4 gap-4 items-start justify-between">
         <div className="flex gap-4 items-start  w-full">
           <img
             src={photoURL}
             alt="Profile"
-            className="rounded-lg sm:w-22 sm:h-22 w-9 h-9 object-cover"
+            className="rounded-lg sm:w-22 sm:h-22 w-10 h-10 object-cover"
           />
           <div className="flex flex-col w-full sm:max-w-4xl">
-            <h2 className="sm:font-bold font-medium sm:text-xl text-xs sm:mb-2 text-white">
+            <h2 className="sm:font-bold font-medium sm:text-xl text-sm sm:mb-2 text-white">
               {firstName + " " + lastName}
             </h2>
-            <p className="text-sm text-white break-words whitespace-pre-line hidden sm:block">
+            <p className="text-sm text-white break-words whitespace-pre-line hidden sm:inline">
               {About}
             </p>
           </div>

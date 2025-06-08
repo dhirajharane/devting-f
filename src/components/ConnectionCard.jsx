@@ -4,7 +4,7 @@ const ConnectionCard = ({ user }) => {
   const { firstName, lastName, About, photoURL, _id } = user;
 
   return (
-    <div className="bg-base-300 sm:w-2/3 w-full shadow-lg rounded-xl my-4 sm:mx-auto px-4 py-3 sm:px-6 mr-24 sm:mr-34">
+    <div className="bg-base-300 sm:w-2/3 w-full shadow-lg rounded-xl sm:my-4 my-2 sm:mx-auto px-4 py-3 sm:px-6 mr-10 sm:mr-56">
       <div className="flex flex-row sm:flex-row gap-4 items-start sm:items-center">
         {/* Profile Image */}
         <img

@@ -35,8 +35,8 @@ const Connections = () => {
 
   return (
     <div className="items-center flex flex-col">
-      <h1 className="text-lg sm:text-3xl font-bold sm:my-4 my-2 mt-18 sm:mt-0 mr-22 sm:mr-0 text-center">Connections</h1>
-      <div className="flex flex-row flex-wrap items-center px-7 py-8">
+      <h1 className="text-lg sm:text-3xl font-bold sm:my-4 my-2 mt-22 sm:mt-4 text-center">Connections</h1>
+      <div className="flex flex-row flex-wrap items-center sm:px-7 sm:py-8 px-7 py-2 ml-12">
         {connections.map((connection) => (
           <ConnectionCard key={connection._id} user={connection} />
         ))}

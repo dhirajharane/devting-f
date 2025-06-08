@@ -164,7 +164,7 @@ const EditProfile = () => {
                 {error}
               </div>
             )}
-            <div className="card-actions justify-end gap-4 mt-4">
+            <div className="card-actions sm:justify-end justify-end-safe gap-4 mt-4 sm:mr-0 mr-16">
               <button
                 onClick={() => window.history.back()}
                 className="btn btn-outline btn-secondary transition-all duration-200 hover:bg-secondary/10"

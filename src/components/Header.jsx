@@ -39,7 +39,7 @@ const Header = () => {
         
         <Link to="/" className="flex items-center gap-1 sm:gap-2">
           <img
-            className="sm:w-56 sm:h-34 -ml-8 sm:-ml-0 w-36 h-22 object-contain drop-shadow-lg brightness-125"
+            className="sm:w-56 sm:h-34 -ml-8 sm:-ml-0 w-42 h-28 object-contain drop-shadow-lg brightness-125 -mt-4 sm:-mt-2"
             src={LOGO_IMG}
             alt="Logo"
           />
@@ -49,12 +49,14 @@ const Header = () => {
         {user && (
           <form
             onSubmit={handleSearch}
-            className="flex items-center bg-base-100 rounded-full shadow-md px-2 py-1 w-full mr-28 sm:mr-72 max-w-md mx-auto border border-primary/30 focus-within:ring-2 focus-within:ring-primary transition"
+            className="flex items-center bg-base-100 rounded-full shadow-md px-2 py-1 w-full mr-3 sm:mr-72 sm:max-w-md max-w-full mx-auto border border-primary/30 focus-within:ring-2 focus-within:ring-primary transition"
+
+
           >
             <input
               type="text"
               className="input input-bordered bg-transparent border-0 focus:outline-none focus:ring-0 text-white placeholder:text-base-content/60 w-full sm:px-3"
-              placeholder="Search users, skills..."
+              placeholder="Search users, skills or interests..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -85,7 +87,7 @@ const Header = () => {
         {/* User Dropdown */}
         <div className="flex gap-2 sm:gap-2 items-center">
           {user && (
-            <div className="dropdown dropdown-end flex items-center sm:z-0 z-20 -mt-52 sm:-mt-0 ml-26 sm:ml-0">
+            <div className="dropdown dropdown-end flex items-center sm:z-0 z-20 -mt-56 sm:-mt-0 ml-52 sm:ml-0">
               <span className="sm:mr-2 mr-1 text-white font-medium text-xs sm:text-lg">Welcome, </span>
               <span className="text-primary font-bold text-sm sm:text-lg sm:mr-2 mr-12">
                 {user.firstName}

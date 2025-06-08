@@ -69,11 +69,11 @@ const Login = () => {
 
   return (
   <div className="flex-1 flex flex-col justify-center items-center w-full px-4 sm:px-0">
-    <h1 className="font-bold sm:text-4xl bg-black/50 text-lg text-primary  sm:-mt-18 z-60 mb-6 sm:mb-7 text-center mr-20 sm:mr-2 animate-pulse">
+    <h1 className="font-bold sm:text-4xl text-lg text-primary -mt-12.5 sm:-mt-18 z-60 mb-14 sm:mb-7 text-center -mr-30 sm:mr-2  animate-pulse">
       Find Your Coding Match!!
     </h1>
 
-    <div className="w-[75%] max-w-[320px] sm:max-w-md bg-black/80 rounded-xl px-4 sm:px-6 py-5 sm:py-6 mt-4 sm:mt-9 mr-24">
+    <div className="w-[75%] max-w-[320px] sm:max-w-md bg-black/80 rounded-xl px-4 sm:px-6 py-5 sm:py-6 mt-4 sm:mt-9 ">
       <h1 className="ml-0.5 sm:text-2xl text-lg font-semibold text-white mb-4 text-center sm:text-left">
         {isLogin ? "Sign In" : "Sign Up"}
       </h1>

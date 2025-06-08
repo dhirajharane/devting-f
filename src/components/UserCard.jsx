@@ -31,7 +31,7 @@ const UserCard = ({ user }) => {
 
   return (
   <div className="flex justify-center items-center">
-    <div className="card bg-gradient-to-br from-primary/60 to-base-200 shadow-2xl rounded-3xl w-10/12 sm:w-96 -mt-9 sm:-mt-2 overflow-hidden border border-primary/30 hover:scale-105 transition-transform duration-300 h-auto sm:h-[520px]">
+    <div className="card bg-gradient-to-br from-primary/60 to-base-200 shadow-2xl rounded-3xl w-10/12 sm:w-96 -mt-24 sm:-mt-2 overflow-hidden border border-primary/30 hover:scale-105 transition-transform duration-300 h-auto sm:h-[520px]">
       <figure className="relative pt-6">
         <img
           src={photoURL}

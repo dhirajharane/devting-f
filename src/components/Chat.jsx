@@ -292,7 +292,7 @@ const Chat = () => {
       </div>
 
       {/* Chat Input */}
-      <div className="relative flex items-center sm:p-4 p-2 bg-gray-800 border-t border-gray-700 mb-4 sm:mb-2 w-auto sm:w-full">
+      <div className="relative flex items-center sm:p-4 p-2 bg-gray-800 border-t border-gray-700 mb-30 sm:mb-2 w-auto sm:w-full">
         <input
           value={newMessage}
           onChange={(e) => setNewMessage(e.target.value)}
