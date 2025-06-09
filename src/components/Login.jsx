@@ -69,7 +69,7 @@ const Login = () => {
 
   return (
   <div className="flex-1 flex flex-col justify-center items-center w-full px-4 sm:px-0">
-    <h1 className="font-bold sm:text-4xl text-lg text-primary -mt-12.5 sm:-mt-18 z-60 mb-14 sm:mb-7 text-center -mr-30 sm:mr-2  animate-pulse">
+    <h1 className="font-bold sm:text-4xl text-lg text-primary -mt-13 sm:-mt-18 z-60 mb-14 sm:mb-7 text-center -mr-30 sm:mr-2  animate-pulse">
       Find Your Coding Match!!
     </h1>
 
