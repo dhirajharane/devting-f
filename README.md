@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <strong>A vibrant platform for developers to connect, collaborate, and code together in real-time.</strong><br>
+  <strong>A real-time vibrant platform for developers to connect, collaborate, and communicate.</strong><br>
   <em>Think LinkedIn + Real-Time Chat + Swipeable Dev Cards 🎯</em>
 </p>
 
