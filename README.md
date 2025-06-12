@@ -4,7 +4,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square"/>
   <img src="https://img.shields.io/badge/Tech%20Stack-React%2C%20Node.js%2C%20Socket.io-blue?style=flat-square"/>
-  <img src="https://img.shields.io/github/license/dhirajharane/devting-f?style=flat-square"/>
 </p>
 
 <p align="center">
