@@ -10,4 +10,4 @@ export const BASE_URL =
   import.meta.env.VITE_BACKEND_URL ||
   (isLocalhost
     ? "http://localhost:3000"
-    : "https://devting-b.onrender.com");
+    : "https://devting-b-0brh.onrender.com");
